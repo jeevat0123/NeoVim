@@ -1,2 +1,1 @@
-# nvim
-My NeoVim config 
+### Jeeva's init.lua
