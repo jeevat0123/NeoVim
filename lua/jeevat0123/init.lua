@@ -1,5 +1,6 @@
 require("jeevat0123.set")
 require("jeevat0123.remap")
+require("jeevat0123.gitConfig")
 
 local augroup = vim.api.nvim_create_augroup
 local Jeevat0123Group = augroup('jeevat0123', {})
