@@ -1,14 +1,19 @@
---require('rose-pine').setup({
---    disable_background = true
---})
---
---function ColorMyPencils(color)
---	color = color or "rose-pine"
---	vim.cmd.colorscheme(color)
---
---	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
---	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
---
---end
+-- Example config in Lua
+require("github-theme").setup({
+  theme_style = "dark_default",
+  function_style = "italic",
+  sidebars = {"qf", "vista_kind", "terminal", "packer"},
 
---ColorMyPencils()
+  -- Change the "hint" color to the "orange" color, and make the "error" color bright red
+  colors = {hint = "orange", error = "#ff0000"},
+
+  -- Overwrite the highlight groups
+  overrides = function(c)
+    return {
+      htmlTag = {fg = c.red, bg = "#282c34", sp = c.hint, style = "underline"},
+      DiagnosticHint = {link = "LspDiagnosticsDefaultHint"},
+      -- this will remove the highlight groups
+      TSField = {},
+    }
+  end
+})
