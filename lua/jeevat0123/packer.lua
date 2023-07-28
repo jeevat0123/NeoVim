@@ -16,17 +16,16 @@ return require('packer').startup(function(use)
 	  'rose-pine/neovim',
 	  as = 'rose-pine',
   })
-
+  use 'projekt0n/github-nvim-theme'
   use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
   use('nvim-treesitter/playground')
-  use('jeevat0123/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  requires = {
-		  -- LSP Support
+		--   LSP Support--  use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
 		  {'neovim/nvim-lspconfig'},
 		  {'williamboman/mason.nvim'},
 		  {'williamboman/mason-lspconfig.nvim'},

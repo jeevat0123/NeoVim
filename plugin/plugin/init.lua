@@ -1,2 +1,0 @@
-require("jeevat0123")
-

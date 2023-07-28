@@ -109,10 +109,10 @@ _G.packer_plugins = {
     path = "/home/jeeva/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  harpoon = {
+  ["github-nvim-theme"] = {
     loaded = true,
-    path = "/home/jeeva/.local/share/nvim/site/pack/packer/start/harpoon",
-    url = "https://github.com/jeevat0123/harpoon"
+    path = "/home/jeeva/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
